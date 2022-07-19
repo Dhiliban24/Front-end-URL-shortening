@@ -1,0 +1,20 @@
+<div *ngIf="basicNav">
+<app-nav-bar></app-nav-bar>
+</div>
+<div *ngIf="logNav">
+  <app-nav-barlog></app-nav-barlog>
+  </div>
+<div  *ngIf="showDiv">
+    <div class="card" >
+        <img src="../assets/home.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Short links,big results</h3>
+          <p class="card-text">
+            A URL Shortener Tool build to grow and protect your brand 
+          </p>
+    
+        </div>
+      </div>
+    </div>
+
+<router-outlet (activate)="toggleDiv($event)"></router-outlet>

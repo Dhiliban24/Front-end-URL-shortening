@@ -1,0 +1,25 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #041e4e">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="../assets/logo.png" width="180px" height="100px"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+               
+                  <a class="nav-item nav-link" routerLink="url/shorturl" style="font-size: 25px;margin:25px;">Shorten URL</a>
+                  <a class="nav-item nav-link" routerLink="url/expandurl" style="font-size: 25px;margin:25px;">Expand URL</a>
+                  <a class="nav-item nav-link" routerLink="topurl" style="font-size: 25px;margin:25px;">Top URLs</a>
+                  <a class="nav-item nav-link" routerLink="recenturl" style="font-size: 25px;margin:25px;">Recent URLs</a>
+                  <a class="nav-item nav-link" routerLink="allurl" style="font-size: 25px;margin:25px;">All URLs</a>
+                 
+                </div>
+                    <button [routerLink]="['user/login']">Logout</button>
+                
+            </div>
+        </div>
+      </nav>
+
+    </div>
+    

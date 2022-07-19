@@ -1,0 +1,54 @@
+<style>
+    .container{
+        background-color:#ABC9FF;
+        padding:25px;
+        width:800px;
+    }
+    input{
+        width:100%;
+        padding:12px 20px;
+        margin:8px 0px;
+        display:inline-block;
+        border:2px solid green;
+    }
+    button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        border-radius:50px;
+    }
+    .container{
+      border-radius: 50px;
+      background-color: #E6E6FA;
+    }
+</style>
+<div class="card" style="align-items: center;margin: 30px;">
+    <br><br>
+    <table>
+
+    <th  colspan="2" style="text-align: center;"><h1> Expand URL
+    </h1>    </th>
+    
+    <tr style="height: 800px;">
+        <td >
+        <img src="../assets/urlshort.jpg" class="card-img-top" style="height: 700px;" />
+        </td>
+        <td style="width: 800px;">
+            <label style="text-align:center; font-size:30px;margin:auto; display:inline-block;" for="OriUrl">Short Url</label>
+            <input style="text-align:center; margin:auto;display:inline-block;" [(ngModel)]=urlDetails.shortUrl  name="shortUrl" type="text" id="OriUrl"/>
+            <br/>
+            <br/>
+        <button (click)="expandUrl()">Expand Url</button>
+        <br/>
+        <br/>
+        <h2>Original Url: {{ urlDetails.longUrl }}</h2>
+        <br>
+        </td>
+    </tr>
+</table>
+
+</div>

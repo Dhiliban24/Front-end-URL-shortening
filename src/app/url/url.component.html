@@ -1,0 +1,46 @@
+<style>
+    .container{
+        background-color:#ABC9FF;
+        padding:25px;
+        width:800px;
+    }
+   
+    button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        border-radius:50px;
+    }
+    .container{
+      border-radius: 50px;
+      background-color: #E6E6FA;
+    }
+</style>
+
+<form>
+    <div class="container">
+    <h1 style="text-align:center; color:gray">Dashboard</h1>
+    <div>
+    <br/>
+    <h4>Click on this button to expand the short URL</h4>
+    <button (click)="onExpand()">Expand Url</button>
+    <h4>Click on this button to get short URL for the large URL</h4>
+    <button (click)="onShorten()">Short Url</button>
+    <br/>
+ 
+    <h4>Click on this button to show Top URL's</h4>
+    <button (click)="top()">Top URL</button>
+    <br/>
+    <h4>Click on this button to show recent URL's</h4>
+    <button (click)="recent()">Recent URL's</button>
+    <br/>
+    <h4>Click on this button to show all URL's</h4>
+    <button (click)="all()">All URL's</button>
+    <br/>
+    </div>
+    </div>
+    </form>

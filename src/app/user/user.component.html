@@ -1,0 +1,40 @@
+<style>
+    .container{
+        background-color:#ABC9FF;
+        padding:25px;
+        width:800px;
+    }
+   
+    button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        border-radius:50px;
+    }
+    .container{
+      border-radius: 50px;
+      background-color: #E6E6FA;
+    }
+</style>
+
+<form>
+    <div class="container">
+    <h1 style="text-align:center; color:gray">User Page</h1>
+    <div>
+    <br/>
+    <br/>
+    <h4>Click on this button to register the user</h4>
+    <br/>
+    <button (click)="onRegister()">Register</button>
+    <br/>
+    <br/>
+    <h4>Click on this button to login</h4>
+    <br/>
+    <button (click)="onLogin()">Login</button>
+    </div>
+    </div>
+    </form>

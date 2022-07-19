@@ -1,0 +1,27 @@
+<div class="card" style="align-items: center;margin: 30px;">
+    <br><br>
+    <table>
+
+    <th  colspan="2" style="text-align: center;"><h1> Shorten URL
+    </h1>    </th>
+    
+    <tr style="height: 800px;">
+        <td >
+        <img src="../assets/urlshort.jpg" class="card-img-top" style="height: 700px;" />
+        </td>
+        <td style="width: 800px;">
+    <label style="text-align:center;font-size:30px; margin:auto; display:inline-block;" for="OriUrl">Original Url</label>
+    <input style="text-align:center; margin:auto;display:inline-block;" [(ngModel)]=urlDetails.longUrl  name="longUrl" type="text" id="OriUrl"/>  
+    <br/>
+    <br/> 
+    <label style="text-align:center; font-size:30px;margin:auto; display:inline-block;" for="Short">Short URL</label>
+    <input style="text-align:center; margin:auto;display:inline-block;" type="text" id="Short" value="{{ urlDetails.shortUrl}} "/>
+    
+    <br/>
+    <br/>
+    <button  (click)="shortUrl()"> Shorten</button>
+        </td>
+    </tr>
+</table>
+
+</div>

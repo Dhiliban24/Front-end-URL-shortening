@@ -1,0 +1,84 @@
+
+<style>
+   button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 5%;
+        border-radius:50px;
+    }
+</style>
+<br/>
+<br/>
+<h4>Click on this button to get the top 20 frequently used URL's</h4>
+<button (click)="gettopurls()">Top</button>
+<h2 style="text-align: center;">Top 20 frequently used URL's</h2>
+<br/>
+<br/>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Long URL</th>
+      <th scope="col">Short URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr 
+    *ngFor="let url of urlData"
+    >
+      <td> {{url.longUrl}} </td>
+      <td>{{url.shortUrl}}</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<br/>
+
+<h4>Click on this button to get the recently created 20 URL's</h4>
+<button (click)="getrecenturls()">Recent</button>
+<h2 style="text-align: center;">20 recently created URL's</h2>
+<br/>
+<br/>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Long URL</th>
+      <th scope="col">Short URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr 
+    *ngFor="let url of urlRecentData"
+    >
+      <td> {{url.longUrl}} </td>
+      <td>{{url.shortUrl}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Click on this button to get all URL's</h4>
+<button (click)="getallurls()">All Urls</button>
+<h2 style="text-align: center;">All created URL's</h2>
+<br/>
+<br/>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Long URL</th>
+      <th scope="col">Short URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr 
+    *ngFor="let url of urlAllData"
+    >
+      <td> {{url.longUrl}} </td>
+      <td>{{url.shortUrl}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
